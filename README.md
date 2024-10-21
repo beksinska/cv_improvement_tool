@@ -3,10 +3,6 @@
 ## TASKS
 
 1. **22 Oct**: Name, Project (little description) and GitHub [5 Points]
-
-Ciwi - CV improvement tool.
-Ciwi is a CV enhancement tool designed to help job seekers optimize their resumes for specific job postings. Ciwi scans the user's CV, compares it to the requirements of the desired job, and provides tailored suggestions for improvement, increasing chances of landing the job.
-
 2. **01st Dec**: First Deliverable with good content [15 Points]
 3. **20th Jan**: Final GitHub with all Tasks
 

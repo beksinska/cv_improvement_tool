@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PDF Assistant</title>
+  <title>CV Assistant</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -27,33 +27,55 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    textarea, input[type="file"], button {
-      width: 100%;
+    
+    textarea {
+      width: 97%;
       padding: 10px;
       margin: 10px 0;
+      display: block;
       border-radius: 5px;
       border: 1px solid #ddd;
       font-size: 1rem;
     }
+
+    input[type="file"], button {
+      width: 97%;
+      padding: 10px;
+      margin: 10px 0;
+      display: block;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      font-size: 1rem;
+    }
+
     button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      display: block;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      font-size: 1rem;
       background-color: #FF8DA1;
       color: white;
       border: none;
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
+    
     button:disabled {
       background-color: #cccccc;
       cursor: not-allowed;
     }
     #response {
-      margin-top: 20px;
-      padding: 15px;
-      background-color: #f0f0f0;
-      border-radius: 5px;
-      max-height: 300px;
-      overflow-y: auto;
-      font-size: 1.1rem;
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    font-size: 1.1rem;
     }
     .qna {
       margin-bottom: 15px;
@@ -72,7 +94,7 @@
       margin-left: 10px; 
     }
     #fileStatus {
-      color: #4CAF50;
+      color: #FF8DA1;
       margin-bottom: 10px;
       font-weight: bold;
     }
@@ -81,8 +103,10 @@
 <body>
 
   <h1>Ciwi</h1>
+  <h2>CV assistant</h2>
 
   <div id="container">
+    <b>Upload your CV in PDF format</b>
     <input type="file" id="fileInput" accept=".pdf">
     <div id="fileStatus"></div>
     <textarea id="requestInput" rows="4" placeholder="Add your desired job description" value="What are the sections of worksheet"></textarea>
@@ -92,6 +116,17 @@
   </div>
 
   <script>
+
+    function cleanMarkdown(text) {
+      return text
+        .replace(/[_*~`#]/g, '')      // Remove symbols like *, _, ~, `, #
+        .replace(/!\[.*?\]\(.*?\)/g, '')  // Remove image syntax ![alt](url)
+        .replace(/\[(.*?)\]\(.*?\)/g, '$1')  // Convert links [text](url) to just "text"
+        .replace(/^\s*-\s+/gm, '')     // Remove list bullets like '-'
+        .replace(/^\s*\d+\.\s+/gm, '') // Remove ordered list numbers like '1.'
+        .trim();                        // Trim any extra whitespace
+    }
+
     const fileInput = document.getElementById('fileInput');
     const requestInput = document.getElementById('requestInput');
     const submitBtn = document.getElementById('submitBtn');
@@ -131,10 +166,10 @@
     submitBtn.addEventListener('click', async () => {
       const request = requestInput.value.trim();
       if (!request) {
-        alert('Please enter a job description.');
+        alert('Enter your desired job description.');
         return;
       }
-
+      responseDiv.style.display = 'block';
       responseDiv.textContent = 'Loading...'; 
 
       const res = await fetch('/ask', {
@@ -144,6 +179,7 @@
       });
 
       const data = await res.json();
+      
       responseDiv.textContent = ''; 
 
       if (data.error) {
@@ -162,7 +198,8 @@
         answerDiv.innerHTML = '';
         if (data.answers && data.answers.length > 0) {
           const uniqueAnswers = [...new Set(data.answers)];  
-          answerDiv.innerHTML = `<strong>A:</strong> ${uniqueAnswers.join('<br><br>')}`;
+          const cleanedAnswers = uniqueAnswers.map(answer => cleanMarkdown(answer)); // Clean markdown
+          answerDiv.innerHTML = `<strong>A:</strong> ${cleanedAnswers.join('<br><br>')}`;
         }
 
         newQna.appendChild(requestDiv);

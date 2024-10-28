@@ -43,7 +43,7 @@ const upload = multer({ storage: storage })
 async function createAssistant() {
   const assistant = await openai.beta.assistants.create({
     name: 'CV Improvement Assistant',
-    instructions: 'You are an assistant that makes suggestions for improvment of uploaded CV file, to increase chances of landing a desired job.',
+    instructions: 'You are an assistant that makes suggestions for improvment of uploaded CV in the form of PDF file, to increase chances of landing a desired job, which user provided in their request',
     model: 'gpt-4o-mini',
     tools: [{ type: 'file_search' }],
   })

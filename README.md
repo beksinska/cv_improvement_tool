@@ -11,17 +11,17 @@
 **B**) Make sure each person has applied the following topics on the code which have been taught in the lecture:
 
 1. Use and understand **Git!** Be able to apply the basic commands. Can you experiment with time travelling or branches/merges? **Done.**
-2. **UML**: software_engineering_tasks/uml
-3. **Requirements**: software_engineering_tasks/requirements.txt
-4. **Analysis**: software_engineering_tasks/Analysis.pdf
-5. **DDD**: software_engineering_tasks/ddd
+2. **UML**: [here](https://github.com/beksinska/cv_improvement_tool/tree/main/software_engineering_tasks/uml)
+3. **Requirements**: [here](https://github.com/beksinska/cv_improvement_tool/blob/main/software_engineering_tasks/requirements.md)
+4. **Analysis**: [here](https://github.com/beksinska/cv_improvement_tool/blob/main/software_engineering_tasks/Analysis.pdf)
+5. **DDD**: [here](https://github.com/beksinska/cv_improvement_tool/tree/main/software_engineering_tasks/ddd)
 6. **Metrics** at least two. Sonarcube would be great. Other non-trivial metrics are also fine.
 7. **Clean Code Development:** A) At least 5 points you can show me with an explanation of why this is clean code in your code and/or what has improved & B) >>10 points on your personal CCD cheat sheet. E.g. a PDF.
 8. **Build** Management with any Build System as Ant, Maven, Gradle, etc. (only Travis is perhaps not enough) Do e.g. generate Docs, call tests, etc. (it could be also disconnected from the project just to learn a build tool!) => to be merged with 7!
 9. **Continuous Delivery:** [here](https://github.com/beksinska/GitHubActions)
 10. Integrate some nice **unit tests** in your Code to be integrated into the Build
 11. Use a good **IDE** and get fluent with it: e.g. VSCode, IntelliJ. What are your favourite key shortcuts?!
-12. **DSL** Create a small DSL Demo example snippet in your code even if it does not contribute to your project (hence it can also be in another language).
+12. AI Coding: Set Up an AI-coding environment on your computer like ZED, Aider, etc. Show your steps and personal experiences! 
 13. **Functional Programming:** prove that you have covered all functional aspects in your code as:
     - only final data structures
     - (mostly) side-effect-free functions

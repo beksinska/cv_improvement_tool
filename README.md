@@ -2,23 +2,23 @@
 
 ## TASKS
 
-1. **22 Oct**: Name, Project (little description) and GitHub [5 Points]
-2. **01st Dec**: First Deliverable with good content [15 Points]
+1. **22 Oct**: Name, Project (little description) and GitHub [5 Points] - Done
+2. **01st Dec**: First Deliverable with good content [15 Points] - Done
 3. **20th Jan**: Final GitHub with all Tasks
 
-**A) Write a small pet project to get into coding again. The code in GitHub can be relatively simple (e.g., a game with console output). The doc can be short! (in contrast to the one below)**
+**A) Write a small pet project to get into coding again. The code in GitHub can be relatively simple (e.g., a game with console output). The doc can be short! (in contrast to the one below)** - Done: [here](https://github.com/beksinska/ciwi)
 
 **B**) Make sure each person has applied the following topics on the code which have been taught in the lecture:
 
-1. Use and understand **Git!** Be able to apply the basic commands. Can you experiment with time travelling or branches/merges?
-2. **UML** at least **3** good different diagrams. "good" means you can pump it up artificially as written in DDD. You have 10 million $ from me! Please export the pics. I can not install all the tools to view them! For example, these diagrams are a good idea: Use-Case, Component D, Class D, and activity Diagram.
-3. **Requirements**:
-4. **Analysis**:
-5. A) **DDD**: Do an Event-Storming to find your Domains! If your domain is too small, invent other domains around and document these domains (as if you have 100 Mio € from Edlich-Investment!) **(B)** Develop a clear strategic design with mappings/relationships with >4 Domains coming from an Event Storming **(A)**. Drop your Domains into a Core Domain Chart **(C)** and indicate the Relations = Mappings (! see MIRO examples again) between the Domains!
+1. Use and understand **Git!** Be able to apply the basic commands. Can you experiment with time travelling or branches/merges? **Done.**
+2. **UML**: software_engineering_tasks/uml
+3. **Requirements**: software_engineering_tasks/requirements.txt
+4. **Analysis**: software_engineering_tasks/Analysis.pdf
+5. **DDD**: software_engineering_tasks/ddd
 6. **Metrics** at least two. Sonarcube would be great. Other non-trivial metrics are also fine.
 7. **Clean Code Development:** A) At least 5 points you can show me with an explanation of why this is clean code in your code and/or what has improved & B) >>10 points on your personal CCD cheat sheet. E.g. a PDF.
 8. **Build** Management with any Build System as Ant, Maven, Gradle, etc. (only Travis is perhaps not enough) Do e.g. generate Docs, call tests, etc. (it could be also disconnected from the project just to learn a build tool!) => to be merged with 7!
-9. **Continuous Delivery:** show me your pipeline using e.g. **Jenkins**, Travis-CI, Circle-CI, GitHub Action, GitLab CI, etc. E.g. you can also use Jenkins Pipelining or BlueOcean, etc. But at least insert more than 2 script calls as done in the lecture! (e.g. also call Ant or Gradle or something else).
+9. **Continuous Delivery:** [here](https://github.com/beksinska/GitHubActions)
 10. Integrate some nice **unit tests** in your Code to be integrated into the Build
 11. Use a good **IDE** and get fluent with it: e.g. VSCode, IntelliJ. What are your favourite key shortcuts?!
 12. **DSL** Create a small DSL Demo example snippet in your code even if it does not contribute to your project (hence it can also be in another language).

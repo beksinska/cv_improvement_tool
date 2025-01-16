@@ -15,7 +15,7 @@
 3. **Requirements**: [here](https://vintage-snowboard-5bd.notion.site/Requirements-17ac7d8ad36180f0b780fd1889f39b9d?pvs=4)
 4. **Analysis**: [here](https://github.com/beksinska/cv_improvement_tool/blob/main/software_engineering_tasks/Analysis.pdf)
 5. **DDD**: [here](https://github.com/beksinska/cv_improvement_tool/tree/main/software_engineering_tasks/ddd)
-6. **Metrics** at least two. Sonarcube would be great. Other non-trivial metrics are also fine.
+6. **Metrics** at least two. Sonarcube would be great. Other non-trivial metrics are also fine.\
 I used Sonarcube to make sure that the code follows the best practices. It gave me two suggestions:\
 First issue was a redundant field:
 
@@ -34,13 +34,14 @@ Modified:
 <img width="676" alt="Image" src="https://github.com/user-attachments/assets/e7de69a8-1a83-438b-aefe-f09ca2f70f6c" />
 
 Those were the only issues. Good!\
-7. **Clean Code Development:** A) At least 5 points you can show me with an explanation of why this is clean code in your code and/or what has improved & B) >>10 points on your personal CCD cheat sheet. E.g. a PDF.
+7. **Clean Code Development:** A) At least 5 points you can show me with an explanation of why this is clean code in your code and/or what has improved & B) >>10 points on your personal CCD cheat sheet. E.g. a PDF.\
 I made sure the code follows the clean code principles:
 - No negative conditionals
 - Clear naming
 - Followed naming convention
 - Functions have no side-effects\
 8. **REFACTORING**: Show me two (non-trivial) Refactoring Examples of your code! Showing the original content and the refactored code! Explain what happened, why and how it has improved! Again: do not send me pure AI work!
+
 9. **BUILD** Management with any Build System as Ant, Maven, Gradle, etc. (only Travis is perhaps not enough) Do e.g. generate Docs, call tests, etc. (it could also be disconnected from the project just to learn a build tool!) => to be merged with 7!
 10. **CONTINOUS DELIVERY:** show me your pipeline using e.g. **Jenkins**, **GitHub Actions**, GitLab CI, etc. E.g. you can also use Jenkins Pipelining or BlueOcean, etc. But at least insert more than 2 script calls as done in the lecture! (e.g. also call Ant or Gradle or something else).
 11. Integrate some nice **UNIT TESTS** in your Code to be integrated into the Build!

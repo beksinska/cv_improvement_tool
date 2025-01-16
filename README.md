@@ -17,19 +17,19 @@
 5. **DDD**: [here](https://github.com/beksinska/cv_improvement_tool/tree/main/software_engineering_tasks/ddd)
 6. **Metrics** at least two. Sonarcube would be great. Other non-trivial metrics are also fine.
 I used Sonarcube to make sure that the code follows the best practices. It gave me two suggestions:
-First issue was a redundant field
+1. A redundant field:
 
 <img width="397" alt="Image" src="https://github.com/user-attachments/assets/b768d5e1-c4c8-4eba-94f1-d8189c8e0bd6" />
 
-Modified
+Modified:
 
 <img width="354" alt="Image" src="https://github.com/user-attachments/assets/75adc8a5-7306-4d94-b37a-048860fe8e03" />
 
-Second was an unnecessary escape character
+2. An unnecessary escape character:
 
 <img width="795" alt="Image" src="https://github.com/user-attachments/assets/dff0f610-2988-4cdb-b526-193d41074d12" />
 
-Modified
+Modified:
 
 <img width="676" alt="Image" src="https://github.com/user-attachments/assets/e7de69a8-1a83-438b-aefe-f09ca2f70f6c" />
 

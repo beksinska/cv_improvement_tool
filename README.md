@@ -39,32 +39,18 @@ I made sure the code follows the clean code principles:
 - No negative conditionals
 - Clear naming
 - Followed naming convention
-- Functions have no side-effects
-8. **Build** Management with any Build System as Ant, Maven, Gradle, etc. (only Travis is perhaps not enough) Do e.g. generate Docs, call tests, etc. (it could be also disconnected from the project just to learn a build tool!) => to be merged with 7!
-9. **Continuous Delivery:** [here](https://github.com/beksinska/GitHubActions)
-10. Integrate some nice **unit tests** in your Code to be integrated into the Build
-11. Use a good **IDE** and get fluent with it: e.g. VSCode, IntelliJ. What are your favourite key shortcuts?!
-12. AI Coding: Set Up an AI-coding environment on your computer like ZED, Aider, etc. Show your steps and personal experiences! 
-13. **Functional Programming:** prove that you have covered all functional aspects in your code as:
+- Functions have no side-effects\
+8. **REFACTORING**: Show me two (non-trivial) Refactoring Examples of your code! Showing the original content and the refactored code! Explain what happened, why and how it has improved! Again: do not send me pure AI work!
+9. **BUILD** Management with any Build System as Ant, Maven, Gradle, etc. (only Travis is perhaps not enough) Do e.g. generate Docs, call tests, etc. (it could also be disconnected from the project just to learn a build tool!) => to be merged with 7!
+10. **CONTINOUS DELIVERY:** show me your pipeline using e.g. **Jenkins**, **GitHub Actions**, GitLab CI, etc. E.g. you can also use Jenkins Pipelining or BlueOcean, etc. But at least insert more than 2 script calls as done in the lecture! (e.g. also call Ant or Gradle or something else).
+11. Integrate some nice **UNIT TESTS** in your Code to be integrated into the Build!
+12. Use a good **IDE** and get fluent with it: e.g. VSCode, IntelliJ. What are your favourite key shortcuts?!
+13. **AI Coding**: Set Up an AI-coding environment on your computer like ZED, Aider, free Cursor / Windsurf programs, etc. Show your steps and personal experiences! ([ref](https://newsletter.pragmaticengineer.com/p/ide-that-software-engineers-love))
+14. **FUNCTIONAL PROGRAMMING:** prove that you have covered all functional aspects in your code as:
     - only final data structures
     - (mostly) side-effect-free functions
     - the use of higher-order functions
     - functions as parameters and return values
     - use closures / anonymous functions
-    - You can also do it outside of your project. Even in other languages such as F#, Clojure, Julia, etc.
-
-**The complete documentation must be found in a public GitHub or the system you use.**
-
-**For B) Please give me a hint as a checklist for each numbered 1-13 points (!!!): where I can find the info for your solutions best as links (!) in the README.md !! (e.g. to code)**
-
-**It must explain also part B in 1-2 paragraphs per point! So list the 11 numbered points here and use links here to refer to the respective files (e.g. the CCD files or test files)!**
-
-The contribution in Moodle is just **a Link to GitHub in the comment section**!
-
-And: I do not want to receive 50 invitations to your repo, because your repo is private! Make it public and close it a few days after the grading! (see FAQ)
-
-Another final remark: Mostly, I want **your personal experiences** with Screenshots and personal text!
-
-Please do not write or generate ChatGPT content like "a DSL is blah blah blah, Build Management is blah blah blah...".
-
-This is not needed, and LLM / internet-generated content will result in failing the course!
+    
+    You can also do it outside of your project. Even in other languages such as F#, Clojure, Julia, etc.

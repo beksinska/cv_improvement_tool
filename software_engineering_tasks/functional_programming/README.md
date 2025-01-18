@@ -14,4 +14,4 @@ apply_function_to_list is a higher-order function because it takes a function (f
 
 Immutability:
 
-The numbers list and all the transformations (odd_numbers, doubled_odds, and squared_odds) are immutable in the sense that no elements are modified in place. Instead, we create new lists with the transformed data.
+The numbers list and all the transformations (odd_numbers, doubled_odds, and squared_odds) are immutable in the sense that no elements are modified in place. Instead, new lists are created with the transformed data.

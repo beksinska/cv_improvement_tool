@@ -73,7 +73,7 @@ I used GitHub Actions to configure my CICD pipeline.
 First I added the configuration file [here](https://github.com/beksinska/ciwi/blob/main/.github/workflows/main.yml) \
 Then I reorganised my project structure to make it more clean and logical:
 
-<img width="217" alt="Image" src="https://github.com/user-attachments/assets/5f37b301-aea3-4e43-9da3-e10c395cd51e" />
+<img width="204" alt="Image" src="https://github.com/user-attachments/assets/1fc54f38-0394-4583-8a84-aaaacad20731" />
 
 Finally, I pushed the changes to main and it worked! [Amazing](https://github.com/beksinska/ciwi/actions)
 

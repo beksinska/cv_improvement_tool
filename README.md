@@ -128,11 +128,4 @@ Now, the function checks if the error occurred and, if so, returns the error mes
 
 Sometimes, Copilot gives good suggestions that help me learn how to make the code cleaner. However, I do not always trust the code it gives, as it is often quite dummy.
 
-14. **FUNCTIONAL PROGRAMMING:** prove that you have covered all functional aspects in your code as:
-    - only final data structures
-    - (mostly) side-effect-free functions
-    - the use of higher-order functions
-    - functions as parameters and return values
-    - use closures / anonymous functions
-    
-    You can also do it outside of your project. Even in other languages such as F#, Clojure, Julia, etc.
+14. **FUNCTIONAL PROGRAMMING:** [here]

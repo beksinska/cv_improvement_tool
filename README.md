@@ -42,7 +42,9 @@ I made sure the code follows the clean code principles:
 - No negative conditionals
 - Clear naming
 - Followed naming convention
-- Functions have no side-effects
+
+My clean code cheet sheet [here](https://github.com/beksinska/cv_improvement_tool/blob/main/software_engineering_tasks/clean_code_cheet_sheet.pdf)
+
 
 8. **REFACTORING**: 
 
@@ -62,7 +64,7 @@ This could also lead to errors. To ensure my code follows best practices, I adde
 
 <img width="638" alt="Image" src="https://github.com/user-attachments/assets/f0216516-901b-4470-a536-7353c3bef4a5" />
 
-9. **BUILD** Management with any Build System as Ant, Maven, Gradle, etc. (only Travis is perhaps not enough) Do e.g. generate Docs, call tests, etc. (it could also be disconnected from the project just to learn a build tool!) => to be merged with 7!
+9. **BUILD**: Management with any Build System as Ant, Maven, Gradle, etc. (only Travis is perhaps not enough) Do e.g. generate Docs, call tests, etc. (it could also be disconnected from the project just to learn a build tool!) => to be merged with 7!
 
 For build management I decided to use Parcel because it has a good documentation. I created a small web application to test it.
 First I created src directory, added my index.html file there and ran npx parcel src/index.html. Then I added scripts to package.json file.
@@ -84,8 +86,48 @@ Even app start verification passed!
 <img width="513" alt="Image" src="https://github.com/user-attachments/assets/c6fd66e2-5a19-47e4-a115-4b81ae3be46e" />
 
 11. Integrate some nice **UNIT TESTS** in your Code to be integrated into the Build!
-12. Use a good **IDE** and get fluent with it: e.g. VSCode, IntelliJ. What are your favourite key shortcuts?!
+
+For test I used a populat tool Jest. First I updated package.json to include test scripts.
+Then I updated configuration file for GitHub Action workflow to run tests.
+
+12. **IDE**:
+
+My favorite IDE is IntelliJ, and I have enjoyed using it for many years. However, as I code in multiple languages, I would need to have PyCharm, CLion (they are also nice), and even WebStorm separately. With my small computer, it's a pain. So I had to become fluent with VSCode. It is acceptable and is free! My favourite shortcut is SHIFT+OPTION + ↓, which copies the line down on Mac.
+
 13. **AI Coding**: Set Up an AI-coding environment on your computer like ZED, Aider, free Cursor / Windsurf programs, etc. Show your steps and personal experiences! ([ref](https://newsletter.pragmaticengineer.com/p/ide-that-software-engineers-love))
+
+I set up GitHub copilot as a VSCode extention. So far it helped me refactor my code. For example, 
+
+Original code:
+```javascript
+async function createThread() {
+  const thread = await openai.beta.threads.create()
+  console.log(thread)
+  threadId = thread.id
+  return thread
+}
+```
+Copilot suggestions were:
+- The createThread function does not handle errors. If the openai.beta.threads.create() call fails, it will cause the application to crash. Add a try-catch block to handle potential errors.
+- The console.log(thread) statement should include a more descriptive message to make the logs clearer.
+
+However, the code that Copilot suggested was a little buggy. I tried to fix it myself following the suggestions: 
+```javascript
+async function createThread() {
+  try {
+    const thread = await openai.beta.threads.create()
+    console.log(thread)
+    threadId = thread.id
+    return thread
+  } catch (error) {
+    console.error('Error creating thread:', error.message)
+  }
+}
+```
+Now, the function checks if the error occurred and, if so, returns the error message.
+
+Sometimes, Copilot gives good suggestions that help me learn how to make the code cleaner. However, I do not always trust the code it gives, as it is often quite dummy.
+
 14. **FUNCTIONAL PROGRAMMING:** prove that you have covered all functional aspects in your code as:
     - only final data structures
     - (mostly) side-effect-free functions

@@ -15,7 +15,7 @@
 3. **Requirements**: [here](https://vintage-snowboard-5bd.notion.site/Requirements-17ac7d8ad36180f0b780fd1889f39b9d?pvs=4)
 4. **Analysis**: [here](https://github.com/beksinska/cv_improvement_tool/blob/main/software_engineering_tasks/Analysis.pdf)
 5. **DDD**: [here](https://github.com/beksinska/cv_improvement_tool/tree/main/software_engineering_tasks/ddd)
-6. **Metrics** 
+6. **Metrics**: 
 I used Sonarcube to make sure that the code follows the best practices. It gave me two suggestions:
 
 First issue was a redundant field:
@@ -94,7 +94,7 @@ Then I updated configuration file for GitHub Action workflow to run tests.
 
 My favorite IDE is IntelliJ, and I have enjoyed using it for many years. However, as I code in multiple languages, I would need to have PyCharm, CLion (they are also nice), and even WebStorm separately. With my small computer, it's a pain. So I had to become fluent with VSCode. It is acceptable and is free! My favourite shortcut is SHIFT+OPTION + ↓, which copies the line down on Mac.
 
-13. **AI Coding**: Set Up an AI-coding environment on your computer like ZED, Aider, free Cursor / Windsurf programs, etc. Show your steps and personal experiences! ([ref](https://newsletter.pragmaticengineer.com/p/ide-that-software-engineers-love))
+13. **AI Coding**:
 
 I set up GitHub copilot as a VSCode extention. So far it helped me refactor my code. For example, 
 

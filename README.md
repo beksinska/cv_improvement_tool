@@ -66,7 +66,23 @@ This could also lead to errors. To ensure my code follows best practices, I adde
 
 For build management I decided to use Parcel because it has a good documentation. I created a small web application to test it.
 First I created src directory, added my index.html file there and ran npx parcel src/index.html. Then I added scripts to package.json file.
-10. **CONTINOUS DELIVERY:** show me your pipeline using e.g. **Jenkins**, **GitHub Actions**, GitLab CI, etc. E.g. you can also use Jenkins Pipelining or BlueOcean, etc. But at least insert more than 2 script calls as done in the lecture! (e.g. also call Ant or Gradle or something else).
+
+10. **CONTINOUS DELIVERY:** 
+
+I used GitHub Actions to configure my CICD pipeline.
+First I added the configuration file [here](https://github.com/beksinska/ciwi/blob/main/.github/workflows/main.yml) \
+Then I reorganised my project structure to make it more clean and logical:
+
+<img width="217" alt="Image" src="https://github.com/user-attachments/assets/5f37b301-aea3-4e43-9da3-e10c395cd51e" />
+
+Finally, I pushed the changes to main and it worked! [Amazing](https://github.com/beksinska/ciwi/actions)
+
+<img width="854" alt="Image" src="https://github.com/user-attachments/assets/08198638-a865-4f43-a0c5-77fc8f366234" />
+
+Even app start verification passed!
+
+<img width="513" alt="Image" src="https://github.com/user-attachments/assets/c6fd66e2-5a19-47e4-a115-4b81ae3be46e" />
+
 11. Integrate some nice **UNIT TESTS** in your Code to be integrated into the Build!
 12. Use a good **IDE** and get fluent with it: e.g. VSCode, IntelliJ. What are your favourite key shortcuts?!
 13. **AI Coding**: Set Up an AI-coding environment on your computer like ZED, Aider, free Cursor / Windsurf programs, etc. Show your steps and personal experiences! ([ref](https://newsletter.pragmaticengineer.com/p/ide-that-software-engineers-love))

@@ -82,10 +82,7 @@ Even app start verification passed!
 
 <img width="513" alt="Image" src="https://github.com/user-attachments/assets/c6fd66e2-5a19-47e4-a115-4b81ae3be46e" />
 
-11. Integrate some nice **UNIT TESTS** in your Code to be integrated into the Build!
-
-For test I used a populat tool Jest. First I updated package.json to include test scripts.
-Then I updated configuration file for GitHub Action workflow to run tests.
+11. Integrate some nice **UNIT TESTS**: [here](https://github.com/beksinska/cv_improvement_tool/tree/main/software_engineering_tasks/functional_programming)
 
 12. **IDE**:
 

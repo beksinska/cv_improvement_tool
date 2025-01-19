@@ -1,0 +1,11 @@
+$background: pink;
+html {
+    height: 100%;
+  }
+body {
+    min-height: 97%;
+    background: $background;
+    font-family: Arial, sans-serif;
+    margin: 10;
+    padding: 0;
+}

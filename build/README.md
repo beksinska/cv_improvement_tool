@@ -1,0 +1,3 @@
+For build management I decided to use Parcel because it has a good documentation. I created a small web application to test it.
+First I created src directory, added my index.html file there and ran npx parcel src/index.html. Then I added scripts to package.json file.
+The benefit of Parcel is that it will transform scss files on it's own. It creates dist directory where the built code goes, so if we need some server to use the code, we should map them to that directory.

@@ -1,0 +1,14 @@
+{
+  "name": "parcel-project",
+  "version": "1.0.0",
+  "description": "The purpose of this program is to try out and learn Parcel",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html"
+  },
+  "author": "Daria Posashkova",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.3",
+    "parcel": "^2.13.3"
+  }
+}

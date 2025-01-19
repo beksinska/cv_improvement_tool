@@ -3,3 +3,29 @@ First I created src directory, added my index.html file there and ran npx parcel
 The benefit of Parcel is that it will transform scss files on it's own. It creates dist directory where the built code goes, so if we need some server to use the code, we should point a server to that directory. This is what it lookes like:
 
 <img width="290" alt="Image" src="https://github.com/user-attachments/assets/44848ac8-d7f1-4f95-a903-d295212a0b75" />
+
+To run the project
+
+- Clone the repository:
+
+```
+git clone https://github.com/beksinska/cv_improvement_tool
+```
+
+- Go to the project directory:
+
+```
+cd build
+```
+
+- Install dependencies
+
+```
+npm install
+```
+
+- Run the program:
+
+```
+npm start
+```

@@ -67,7 +67,8 @@ This could also lead to errors. To ensure my code follows best practices, I adde
 9. **BUILD**: Management with any Build System as Ant, Maven, Gradle, etc. (only Travis is perhaps not enough) Do e.g. generate Docs, call tests, etc. (it could also be disconnected from the project just to learn a build tool!) => to be merged with 7!
 
 For build management I decided to use Parcel because it has a good documentation. I created a small web application to test it.
-First I created src directory, added my index.html file there and ran npx parcel src/index.html. Then I added scripts to package.json file.
+First I created src directory, added my index.html file there and ran npx parcel src/index.html. Then I added scripts to package.json file, so I can start the app by running npm start.
+The benefit of Parcel is that it will transform scss files on it's own. It creates dist directory where the built code goes, so if we need some server to use the code, we should point a server to that directory.
 
 10. **CONTINOUS DELIVERY:** 
 
@@ -92,7 +93,9 @@ Then I updated configuration file for GitHub Action workflow to run tests.
 
 12. **IDE**:
 
-My favorite IDE is IntelliJ, and I have enjoyed using it for many years. However, as I code in multiple languages, I would need to have PyCharm, CLion (they are also nice), and even WebStorm separately. With my small computer, it's a pain. So I had to become fluent with VSCode. It is acceptable and is free! My favourite shortcut is SHIFT+OPTION + ↓, which copies the line down on Mac.
+My favorite IDE is IntelliJ, and I have enjoyed using it for many years. However, as I code in multiple languages, I would need to have PyCharm, CLion (they are also nice), and even WebStorm separately. With my small computer, it's a pain. So I had to become fluent with VSCode. It is acceptable and is free! 
+
+My favourite shortcut is SHIFT+OPTION + ↓, which copies the line down on Mac.
 
 13. **AI Coding**:
 
@@ -128,4 +131,4 @@ Now, the function checks if the error occurred and, if so, returns the error mes
 
 Sometimes, Copilot gives good suggestions that help me learn how to make the code cleaner. However, I do not always trust the code it gives, as it is often quite dummy.
 
-14. **FUNCTIONAL PROGRAMMING:** [here]
+14. **FUNCTIONAL PROGRAMMING:** [here](https://github.com/beksinska/cv_improvement_tool/tree/main/software_engineering_tasks/functional_programming)

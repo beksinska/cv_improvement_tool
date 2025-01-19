@@ -15,7 +15,7 @@ git clone https://github.com/beksinska/cv_improvement_tool
 - Go to the project directory:
 
 ```
-cd build
+cd software_engineering_tasks/build
 ```
 
 - Install dependencies

@@ -64,11 +64,7 @@ This could also lead to errors. To ensure my code follows best practices, I adde
 
 <img width="638" alt="Image" src="https://github.com/user-attachments/assets/f0216516-901b-4470-a536-7353c3bef4a5" />
 
-9. **BUILD**: Management with any Build System as Ant, Maven, Gradle, etc. (only Travis is perhaps not enough) Do e.g. generate Docs, call tests, etc. (it could also be disconnected from the project just to learn a build tool!) => to be merged with 7!
-
-For build management I decided to use Parcel because it has a good documentation. I created a small web application to test it.
-First I created src directory, added my index.html file there and ran npx parcel src/index.html. Then I added scripts to package.json file, so I can start the app by running npm start.
-The benefit of Parcel is that it will transform scss files on it's own. It creates dist directory where the built code goes, so if we need some server to use the code, we should point a server to that directory.
+9. **BUILD**: [here](https://github.com/beksinska/cv_improvement_tool/tree/main/software_engineering_tasks/build)
 
 10. **CONTINOUS DELIVERY:** 
 

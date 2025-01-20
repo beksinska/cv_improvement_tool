@@ -16,23 +16,46 @@
 4. **Analysis**: [here](https://github.com/beksinska/cv_improvement_tool/blob/main/software_engineering_tasks/Analysis.pdf)
 5. **DDD**: [here](https://github.com/beksinska/cv_improvement_tool/tree/main/software_engineering_tasks/ddd)
 6. **Metrics**: 
-I used Sonarcube to make sure that the code follows the best practices. It gave me two suggestions:
+I used Sonarcube to make sure that the code follows the best practices. For simplicity I checked my program it locally. It was a pain to use it as it always ran out of memory. Once I gave it enough resources, it finally worked:
 
-First issue was a redundant field:
+<img width="437" alt="Image" src="https://github.com/user-attachments/assets/3e108683-fbaa-44b7-b450-f8108307f92d" />
+
+This was the result of the quality check:
+
+<img width="1198" alt="Image" src="https://github.com/user-attachments/assets/1fe4d396-ea75-4431-a237-178b8a23d1f0" />
+
+We can see that there are no security, maintainability or reliability issues. 
+
+Security:
+0 Open Issues: No security vulnerabilities or critical issues are detected in the code.
+Rating: A (the best grade possible).
+
+Reliability:
+0 Open Issues: No bugs or problems affecting the reliability of the application.
+Rating: A.
+
+Maintainability:
+0 Open Issues: No identified problems that would make the code hard to maintain or refactor.
+Rating: A.
+
+Duplications:
+0.0% Duplications: No duplicate code has been found among 433 lines of code analyzed.
+
+Security Hotspots:
+4 Hotspots: Areas of the code identified as potentially requiring review for security concerns.
+Rating: E (indicating this area needs immediate attention). Needs to be checked.
+
+Of course, tests should be added (I implemented tests in another program, see functional programming directory). 
+
+Also, sonarcube VS code extention gave me a small suggestion:
+
+The issue was a redundant field:
 
 <img width="397" alt="Image" src="https://github.com/user-attachments/assets/b768d5e1-c4c8-4eba-94f1-d8189c8e0bd6" />
 
 Modified:
 
 <img width="354" alt="Image" src="https://github.com/user-attachments/assets/75adc8a5-7306-4d94-b37a-048860fe8e03" />
-
-Second issue was an unnecessary escape character:
-
-<img width="795" alt="Image" src="https://github.com/user-attachments/assets/dff0f610-2988-4cdb-b526-193d41074d12" />
-
-Modified:
-
-<img width="676" alt="Image" src="https://github.com/user-attachments/assets/e7de69a8-1a83-438b-aefe-f09ca2f70f6c" />
 
 Those were the only issues. Good!
 
@@ -42,6 +65,7 @@ I made sure the code follows the clean code principles:
 - No negative conditionals
 - Clear naming
 - Followed naming convention
+- Functions mostly only do one thing
 
 My clean code cheet sheet [here](https://github.com/beksinska/cv_improvement_tool/blob/main/software_engineering_tasks/clean_code_cheet_sheet.pdf)
 

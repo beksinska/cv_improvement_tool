@@ -4,7 +4,7 @@
 
 1. **22 Oct**: Name, Project (little description) and GitHub [5 Points] - Done
 2. **01st Dec**: First Deliverable with good content [15 Points] - Done
-3. **20th Jan**: Final GitHub with all Tasks
+3. **20th Jan**: Final GitHub with all Tasks - Done
 
 **A) Write a small pet project to get into coding again. The code in GitHub can be relatively simple (e.g., a game with console output). The doc can be short! (in contrast to the one below)** - Done: [here](https://github.com/beksinska/ciwi)
 
@@ -13,12 +13,21 @@
 1. Use and understand **Git!** Be able to apply the basic commands. Can you experiment with time travelling or branches/merges? **Done.**
 2. **UML**: [here](https://github.com/beksinska/cv_improvement_tool/tree/main/software_engineering_tasks/uml)
 3. **Requirements**:
-In Notion: [here](https://vintage-snowboard-5bd.notion.site/Requirements-17ac7d8ad36180f0b780fd1889f39b9d?pvs=4) \
+In Notion: [here](https://vintage-snowboard-5bd.notion.site/Requirements-17ac7d8ad36180f0b780fd1889f39b9d?pvs=4) 
+
 In Jira:
+
+Requirements in the beginning:
 
 <img width="1428" alt="Image" src="https://github.com/user-attachments/assets/746d007e-9132-443e-951d-e7c4e3d02eb9" />
 
+Requirement description example:
+
 <img width="649" alt="Image" src="https://github.com/user-attachments/assets/ccb7fba2-02c5-422e-ac5c-d534622872db" />
+
+Requirements as of 20/01/2025:
+
+<img width="1162" alt="Image" src="https://github.com/user-attachments/assets/087b246a-433e-4d2d-8fbe-78d2c11eeee8" />
 
 5. **Analysis**: [here](https://github.com/beksinska/cv_improvement_tool/blob/main/software_engineering_tasks/Analysis.pdf)
 6. **DDD**: [here](https://github.com/beksinska/cv_improvement_tool/tree/main/software_engineering_tasks/ddd)

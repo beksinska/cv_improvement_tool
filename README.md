@@ -72,21 +72,65 @@ My clean code cheet sheet [here](https://github.com/beksinska/cv_improvement_too
 
 8. **REFACTORING**: 
 
-OPENAI_API_KEY was not validated for existence before being used. This could lead to runtime errors if the environment variable is not set.
+As checked with SonarQube, there were no redundancies or major maintanence problems. However, there was a room for improvements.
 
-<img width="395" alt="Image" src="https://github.com/user-attachments/assets/3ecf0067-3a4d-4a99-868d-d459d4f74df2" /> 
-
-Added a check to ensure the key is present.
-
-<img width="534" alt="Image" src="https://github.com/user-attachments/assets/4921e248-4c55-4b8d-a104-bb4b33569a47" />
-
-The function uploadPDFToVectorStore did not check for failures in file upload or vector store initialization.
+The function uploadPDFToVectorStore was very long and looked like a spagetti code. It was definetely not modular, so I decided to split it into smaller pieces.
 
 <img width="652" alt="Image" src="https://github.com/user-attachments/assets/58209c7d-7ff2-4853-a824-f9dfde44aa77" />
 
-This could also lead to errors. To ensure my code follows best practices, I added checking.
+This is how my IDE offered to refactor it: 
 
-<img width="638" alt="Image" src="https://github.com/user-attachments/assets/f0216516-901b-4470-a536-7353c3bef4a5" />
+<img width="608" alt="Image" src="https://github.com/user-attachments/assets/92a0983f-c6a9-4854-a961-96d22d6bbeab" />
+
+I chose extracting the function in module scope. This is what I got:
+
+<img width="608" alt="Image" src="https://github.com/user-attachments/assets/604f5624-9956-4f67-a2ea-61c23c73d08e" />
+
+I did the same with two other functions. This way it is easier to test and maintain the code. 
+
+<img width="655" alt="Image" src="https://github.com/user-attachments/assets/b44d0f23-9689-4bd4-a681-7f287e2ed137" />
+
+This is what my final function uploadPDFToVectorStore lookes like:
+
+<img width="507" alt="Image" src="https://github.com/user-attachments/assets/8533be7a-b059-48d7-8b9d-7721c1caf110" />
+
+Result:
+
+- Extract Method Pattern: Split the monolithic function into smaller, focused functions that each have a single responsibility:
+uploadFile: Handles file upload
+createVectorStore: Creates the vector store with the file
+updateAssistantWithVectorStore: Updates the assistant
+
+- Improved Error Handling:
+
+Each function now has its own try-catch block with specific error messages
+More descriptive error messages for easier debugging
+
+- Better Separation of Concerns:
+
+Each function handles one specific task
+The main function orchestrates the process flow
+Same level of abstraction
+Logging is consistent across all operations
+
+- Improved Readability:
+
+Clear function names that describe their purpose
+Sequential steps are clearly visible in the main function
+Consistent error handling pattern
+
+- Better Maintainability:
+
+Each function can be tested independently!
+Changes to one part of the process won't affect others
+New functionality can be added without modifying existing code
+
+This refactoring follows several principles:
+- improves code clarity and readability
+- reduces method size and complexity
+- follows the single responsibility principle
+- makes the code more testable
+- makes future modifications easier
 
 9. **BUILD**: [here](https://github.com/beksinska/cv_improvement_tool/tree/main/software_engineering_tasks/build)
 

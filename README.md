@@ -12,10 +12,17 @@
 
 1. Use and understand **Git!** Be able to apply the basic commands. Can you experiment with time travelling or branches/merges? **Done.**
 2. **UML**: [here](https://github.com/beksinska/cv_improvement_tool/tree/main/software_engineering_tasks/uml)
-3. **Requirements**: [here](https://vintage-snowboard-5bd.notion.site/Requirements-17ac7d8ad36180f0b780fd1889f39b9d?pvs=4)
-4. **Analysis**: [here](https://github.com/beksinska/cv_improvement_tool/blob/main/software_engineering_tasks/Analysis.pdf)
-5. **DDD**: [here](https://github.com/beksinska/cv_improvement_tool/tree/main/software_engineering_tasks/ddd)
-6. **Metrics**: 
+3. **Requirements**:
+In Notion: [here](https://vintage-snowboard-5bd.notion.site/Requirements-17ac7d8ad36180f0b780fd1889f39b9d?pvs=4) \
+In Jira:
+
+<img width="1428" alt="Image" src="https://github.com/user-attachments/assets/746d007e-9132-443e-951d-e7c4e3d02eb9" />
+
+<img width="649" alt="Image" src="https://github.com/user-attachments/assets/ccb7fba2-02c5-422e-ac5c-d534622872db" />
+
+5. **Analysis**: [here](https://github.com/beksinska/cv_improvement_tool/blob/main/software_engineering_tasks/Analysis.pdf)
+6. **DDD**: [here](https://github.com/beksinska/cv_improvement_tool/tree/main/software_engineering_tasks/ddd)
+7. **Metrics**: 
 I used Sonarcube to make sure that the code follows the best practices. For simplicity I checked my program it locally. It was a pain to use it as it always ran out of memory. Once I gave it enough resources, it finally worked:
 
 <img width="437" alt="Image" src="https://github.com/user-attachments/assets/3e108683-fbaa-44b7-b450-f8108307f92d" />

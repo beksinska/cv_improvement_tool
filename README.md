@@ -84,11 +84,11 @@ This is how my IDE offered to refactor it:
 
 I chose extracting the function in module scope. This is what I got:
 
-<img width="608" alt="Image" src="https://github.com/user-attachments/assets/604f5624-9956-4f67-a2ea-61c23c73d08e" />
+<img width="451" alt="Image" src="https://github.com/user-attachments/assets/086c4a0c-31d3-4a2b-a1aa-c094fcd6d273" />
 
 I did the same with two other functions. This way it is easier to test and maintain the code. 
 
-<img width="655" alt="Image" src="https://github.com/user-attachments/assets/b44d0f23-9689-4bd4-a681-7f287e2ed137" />
+<img width="606" alt="Image" src="https://github.com/user-attachments/assets/8960f461-570d-4cc6-8ce5-f4b5e2638d13" />
 
 This is what my final function uploadPDFToVectorStore lookes like:
 
@@ -96,41 +96,37 @@ This is what my final function uploadPDFToVectorStore lookes like:
 
 Result:
 
-- Extract Method Pattern: Split the monolithic function into smaller, focused functions that each have a single responsibility:
-uploadFile: Handles file upload
-createVectorStore: Creates the vector store with the file
-updateAssistantWithVectorStore: Updates the assistant
+- Extract Method Pattern: Split the monolithic function into smaller, focused functions that each have a single responsibility: \
+uploadFile: Handles file upload \
+createVectorStore: Creates the vector store with the file \
+updateAssistantWithVectorStore: Updates the assistant 
 
 - Improved Error Handling:
-
-Each function now has its own try-catch block with specific error messages
-More descriptive error messages for easier debugging
+each function now has its own try-catch block with specific error messages,
+more descriptive error messages for easier debugging
 
 - Better Separation of Concerns:
-
-Each function handles one specific task
-The main function orchestrates the process flow
-Same level of abstraction
-Logging is consistent across all operations
+each function handles one specific task,
+the main function orchestrates the process flow,
+same level of abstraction,
+logging is consistent across all operations
 
 - Improved Readability:
-
-Clear function names that describe their purpose
-Sequential steps are clearly visible in the main function
-Consistent error handling pattern
+clear function names that describe their purpose,
+sequential steps are clearly visible in the main function,
+consistent error handling pattern
 
 - Better Maintainability:
+each function can be tested independently,
+changes to one part of the process won't affect others,
+new functionality can be added without modifying existing code
 
-Each function can be tested independently!
-Changes to one part of the process won't affect others
-New functionality can be added without modifying existing code
-
-This refactoring follows several principles:
-- improves code clarity and readability
-- reduces method size and complexity
-- follows the single responsibility principle
-- makes the code more testable
-- makes future modifications easier
+This refactoring follows several principles: 
+- improves code clarity and readability 
+- reduces method size and complexity 
+- follows the single responsibility principle 
+- makes the code more testable 
+- makes future modifications easier 
 
 9. **BUILD**: [here](https://github.com/beksinska/cv_improvement_tool/tree/main/software_engineering_tasks/build)
 

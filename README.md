@@ -13,7 +13,6 @@
 1. Use and understand **Git!** Be able to apply the basic commands. Can you experiment with time travelling or branches/merges? **Done.**
 2. **UML**: [here](https://github.com/beksinska/cv_improvement_tool/tree/main/software_engineering_tasks/uml)
 3. **Requirements**:
-In Notion: [here](https://vintage-snowboard-5bd.notion.site/Requirements-17ac7d8ad36180f0b780fd1889f39b9d?pvs=4) 
 
 In Jira:
 
@@ -32,7 +31,7 @@ Requirements as of 20/01/2025:
 5. **Analysis**: [here](https://github.com/beksinska/cv_improvement_tool/blob/main/software_engineering_tasks/Analysis.pdf)
 6. **DDD**: [here](https://github.com/beksinska/cv_improvement_tool/tree/main/software_engineering_tasks/ddd)
 7. **Metrics**: 
-I used Sonarcube to make sure that the code follows the best practices. For simplicity I checked my program it locally. It was a pain to use it as it always ran out of memory. Once I gave it enough resources, it finally worked:
+I used Sonarcube to make sure that the code follows the best practices. For simplicity I checked my program locally. It was a pain to use it as it always ran out of memory. Once I gave it enough resources, it finally worked:
 
 <img width="437" alt="Image" src="https://github.com/user-attachments/assets/3e108683-fbaa-44b7-b450-f8108307f92d" />
 
